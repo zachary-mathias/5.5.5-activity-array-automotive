@@ -17,7 +17,7 @@ class Car extends Vehicle{
         this.scheduleService = false
     }
     loadPassenger(num){
-        
+        this.passengers += num
     }
     start(){
         if(this.fuel > 0){
