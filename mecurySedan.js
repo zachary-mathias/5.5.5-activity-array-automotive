@@ -8,12 +8,12 @@ console.log(v.make)
 
 class Car extends Vehicle{
     constructor(make, model, year, color, mileage, maximumPassengers, passengers, numberOfWheels, maximumSpeed, fuel, scheduleService){
-        super(make, model, year, color, mileage, maximumPassengers, passengers, numberOfWheels, maximumSpeed, fuel, scheduleService)
-        this.maximumPassengers = 5
-        this.passengers = 0
-        this.numberOfWheels = 4
-        this.maximumSpeed = 160 
-        this.fuel = 10
+        super(make, model, year, color, mileage)
+        this.maximumPassengers = maximumPassengers
+        this.passengers = passengers
+        this.numberOfWheels = numberOfWheels
+        this.maximumSpeed = maximumSpeed
+        this.fuel = fuel
         this.scheduleService = false
     }
     loadPassenger(num){
@@ -35,3 +35,4 @@ class Car extends Vehicle{
 }
 
 const a28 = new Vehicle('Mercury','a28', 2023, 'White', 30000, 5, 0, 4, 120, 0, false )
+console.log(a28)
