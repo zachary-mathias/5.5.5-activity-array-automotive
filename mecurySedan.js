@@ -1,5 +1,5 @@
 //this includes the vehicle class as a module
-const { Vehicle } = require("./vehicle");
+const { Vehicle } = require("./vehicle").Vehicle;
 const VehicleModule = require("./vehicleBaseClass");
 
 //this shows how to call from this module...
@@ -17,7 +17,7 @@ class Car extends Vehicle{
         this.scheduleService = false
     }
     loadPassenger(num){
-        this.passengers += num
+        this.passengers = num
     }
     start(){
         if(this.fuel > 0){
@@ -34,3 +34,5 @@ class Car extends Vehicle{
     }
 }
 
+
+console.log(Car.loadPassenger(2))
