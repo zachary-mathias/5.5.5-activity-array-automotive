@@ -1,6 +1,6 @@
 //this includes the vehicle class as a module
 const { Vehicle } = require("./vehicle").Vehicle;
-const VehicleModule = require("./vehicleBaseClass");
+const VehicleModule = require("./vehicleBaseClass").Vehicle;
 
 //this shows how to call from this module...
 let v = new VehicleModule.Vehicle("Mecury", "Sedan", "1965", "color", "mileage");
@@ -34,5 +34,4 @@ class Car extends Vehicle{
     }
 }
 
-
-console.log(Car.loadPassenger(2))
+const a28 = new Vehicle('Mercury','a28', 2023, 'White', 30000, 5, 0, 4, 120, 0, false )
